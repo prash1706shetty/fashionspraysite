@@ -10,11 +10,22 @@
 
 
 $(window).on('load', function() {
+	console.log("window load start-------");
 	/*------------------
 		Preloder
 	--------------------*/
 	$(".loader").fadeOut();
 	$("#preloder").delay(400).fadeOut("slow");
+	
+
+	console.log("json db call start-------");
+	$.getJSON( "https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/test.json", function( data ) {
+		console.log("values->"+JSON.stringify(data));
+		$.each( data, function( key, val ) {
+		  console.log(key + " - "+val);
+		});
+	});
+	console.log("window load end-------");
 
 });
 
@@ -27,6 +38,7 @@ $(window).on('load', function() {
 		closedSymbol: '<i class="flaticon-right-arrow"></i>',
 		openedSymbol: '<i class="flaticon-down-arrow"></i>'
 	});
+
 
 
 	/*------------------
@@ -102,6 +114,7 @@ $(window).on('load', function() {
 		dots: false,
 		margin : 30,
 		autoplay: true,
+		autoplayTimeout:6000,
 		navText: ['<i class="flaticon-left-arrow-1"></i>', '<i class="flaticon-right-arrow-1"></i>'],
 		responsive : {
 			0 : {
@@ -114,12 +127,18 @@ $(window).on('load', function() {
 				items: 3,
 			},
 			1200 : {
-				items: 4,
+				items: 3,
 			}
 		}
 	});
 
-
+	$(document).on("click", ".open-modal", function () {
+		var x = 'Fashion Spray Designer Studio'; 
+		var myHeading = "<img src='https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/scallop.jpg' alt=''>";
+		$("#modal-body").html(myHeading + x);     
+		$('#modal').modal('show');
+	   });
+	   
 	/*------------------
 		Popular Services
 	--------------------*/

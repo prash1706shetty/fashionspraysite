@@ -86,6 +86,11 @@ ol {
   Helper CSS
 -----------------------*/
 
+.fbcustName {
+	text-align: center;
+	margin-bottom: 5px;
+}
+
 .section-title {
 	text-align: center;
 }
@@ -181,7 +186,7 @@ font-family: "Times New Roman", Times, serif;
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: rgb(255, 255, 255);
 }
 
 .loader {
@@ -196,6 +201,19 @@ font-family: "Times New Roman", Times, serif;
 	animation: loader 0.8s linear infinite;
 	-webkit-animation: loader 0.8s linear infinite;
 }
+
+.loaderText {
+	width: 180px;
+	height: 180px;
+	position: absolute;
+	top: 46%;
+	left: 49%;
+	margin-top: -13px;
+	margin-left: -13px;
+	border-radius: 60px;
+}
+
+
 
 @keyframes loader {
 	0% {
@@ -787,10 +805,17 @@ font-family: "Times New Roman", Times, serif;
 
 .top-letest-product-section {
 	padding-top: 70px;
-	padding-bottom: 60px;
 }
 
 .top-letest-product-section .section-title {
+	margin-bottom: 20px;
+}
+
+.top-letest-product-section1 {
+	padding-top: 30px;
+}
+
+.top-letest-product-section1 .section-title {
 	margin-bottom: 20px;
 }
 
@@ -822,6 +847,7 @@ font-family: "Times New Roman", Times, serif;
 	position: relative;
 	display: block;
 }
+
 
 .product-item .tag-new,
 .product-item .tag-sale {
@@ -2206,7 +2232,6 @@ font-family: "Times New Roman", Times, serif;
 		left: 0;
 		top: 0;
 		text-align: center;
-		padding-top: 20px;
 	}
 	.product-slider .owl-nav button.owl-prev,
 	.product-slider .owl-nav button.owl-next {
@@ -2440,4 +2465,12 @@ font-family: "Times New Roman", Times, serif;
 .site-logo span{
 	color: #ff6801;
 	font-size: 30px;
+}
+
+.feedbackPadding {
+	padding:5px;
+}
+
+.mb-2 {
+    margin-bottom: 15px !important;
 }
