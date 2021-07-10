@@ -2535,3 +2535,7 @@ ol {
 .mb-2 {
     margin-bottom: 15px !important;
 }
+
+.contactFont {
+    font-size: 18px;
+}
