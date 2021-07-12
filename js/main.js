@@ -15,7 +15,7 @@ $(window).on('load', function() {
     	Preloder
     --------------------*/
     $(".loader").fadeOut();
-    $("#preloder").delay(400).fadeOut("slow");
+    $("#preloder").fadeOut();
 
     /* var test = '{"reviews":[{"review":"I had good experience. Your designs are perfect,pretty and looks beautiful 😍 fabric u choose  fabulously thanks for my outfit it was too gud ..I and my daughter looked fabulous in that outfit ❤","imageUrl":"https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/applique_1.jpg"},{"review":"This place is pure satisfaction of what you need in fashion field. Pruthvi shetty is such a person who understands the customers needs and bring out the best possible attire with trendy fashion. My bridal blouse was just as I had dreamt of with the antique embroidery.","imageUrl":"https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/layer1.jpg"},{"review":"Osm collections.. A very gud stitching.. I just loved ur ideas.. Ull really make our dreams cme true !!🙂","imageUrl":"https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/meshCascade_1.jpg"},{"review":"Happened to see the boutique while passing by and visited to check for daughter’s bday frock. Pruthvi has great taste and is very professional in her service . Happy to have this boutique accessible and so close !","imageUrl":"https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/pleat_1.jpg"}]}';
     var data = jQuery.parseJSON(test);
