@@ -10,7 +10,7 @@
 
 
 $(window).on('load', function() {
-    console.log("window load start-------");
+    //console.log("window load start-------");
     /*------------------
     	Preloder
     --------------------*/
