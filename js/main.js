@@ -10,7 +10,7 @@
 
 
 $(window).on('load', function() {
-    console.log("window load start-------");
+    //console.log("window load start-------");
     /*------------------
     	Preloder
     --------------------*/
@@ -48,6 +48,8 @@ $(window).on('load', function() {
 
 });
 
+/*------------------
+    
 $(document).ready(function() {
     console.log("called-------");
     $.getJSON("https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/test.json", function(data) {
@@ -57,6 +59,8 @@ $(document).ready(function() {
         });
     });
 });
+
+    --------------------*/
 
 
 
