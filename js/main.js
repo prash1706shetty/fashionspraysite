@@ -48,19 +48,24 @@ $(window).on('load', function() {
 
 });
 
-/*------------------
-    
+
+
 $(document).ready(function() {
-    console.log("called-------");
-    $.getJSON("https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/test.json", function(data) {
-        console.log("values->" + JSON.stringify(data));
-        $.each(data, function(key, val) {
-            console.log(key + " - " + val);
+
+    $(".loader").fadeOut();
+    $("#preloder").delay(400).fadeOut("slow");
+    /*------------------
+        console.log("called-------");
+        $.getJSON("https://fashion-spray-pics.s3.us-south.cloud-object-storage.appdomain.cloud/test.json", function(data) {
+            console.log("values->" + JSON.stringify(data));
+            $.each(data, function(key, val) {
+                console.log(key + " - " + val);
+            });
         });
-    });
+         --------------------*/
 });
 
-    --------------------*/
+
 
 
 
